@@ -21,7 +21,7 @@ import { SingleNotificationComponent } from "./single-notification/single-notifi
 })
 export class HeaderComponent {
 
-  showRelease: boolean = true;
+  showRelease: boolean = false;
   showFeatured: boolean = false;
 
   @Input() newRelease: boolean = true;
