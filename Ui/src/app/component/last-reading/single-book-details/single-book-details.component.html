@@ -1,7 +1,7 @@
 <div class="relative w-full h-full flex flex-row">
 
-    <div class="w-1/2 h-full flex flex-row justify-center items-center relative">
-        <div class="h-5/6 w-32 rounded-xl overflow-hidden z-20">
+    <div class="w-2/5 h-full flex flex-row justify-center items-center relative">
+        <div class="h-5/6 w-32 rounded-xl overflow-hidden z-20 ml-2">
             <img class="h-full w-full select-none" src="assets/escarboucle bleue.jpg" alt="">
         </div>
         <div class="absolute  w-full h-2/3 bottom-0 rounded-l-xl z-10 bg-blackprimary">
@@ -9,9 +9,10 @@
         </div>
     </div>
 
-    <div class="w-1/2 h-2/3 bottom-0 right-0 absolute rounded-r-xl bg-blackprimary pt-5 pr-2">
-        <p class="font-bold text-base select-none">L'Escarboucle blue Escar boucle blue</p>
-        <p class="text-xs mt-2 select-none">Fantastic - 04/12/24</p>
+    <div class="w-3/5 h-2/3 bottom-0 right-0 absolute rounded-r-xl bg-blackprimary pt-5 px-2">
+        <p class="font-bold text-base select-none">{{ title }}</p>
+        <p class="text-xs mt-2 select-none">{{ genre }}</p>
+        <p class="text-xs mt-2 select-none">date retoure: {{ dateRetoure.toDateString() }}</p>
     </div>
 
 </div>

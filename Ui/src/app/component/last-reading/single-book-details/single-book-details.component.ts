@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { genre } from '../../../models/type.model';
 
 @Component({
   selector: 'app-single-book-details',
@@ -9,4 +10,7 @@ import { Component } from '@angular/core';
 })
 export class SingleBookDetailsComponent {
 
+  @Input() title: string = 'Title Harry potter book';
+  @Input() genre: genre = genre.Fantastic
+  @Input() dateRetoure: Date = new Date
 }

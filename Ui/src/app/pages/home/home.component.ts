@@ -3,6 +3,7 @@ import { MenuComponent } from '../../component/menu/menu.component';
 import { CardProfilComponent } from "../../component/card-profil/card-profil.component";
 import { HeaderComponent } from "../../component/header/header.component";
 import { LastReadingComponent } from "../../component/last-reading/last-reading.component";
+import { ListComponent } from "../../component/list/list.component";
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import { LastReadingComponent } from "../../component/last-reading/last-reading.
     MenuComponent,
     CardProfilComponent,
     HeaderComponent,
-    LastReadingComponent
+    LastReadingComponent,
+    ListComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

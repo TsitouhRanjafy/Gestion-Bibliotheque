@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 import { SingleBookDetailsComponent } from "./single-book-details/single-book-details.component";
+import { genre } from '../../models/type.model';
 
 @Component({
   selector: 'app-last-reading',
@@ -9,5 +10,6 @@ import { SingleBookDetailsComponent } from "./single-book-details/single-book-de
   styleUrl: './last-reading.component.scss'
 })
 export class LastReadingComponent {
+
 
 }
