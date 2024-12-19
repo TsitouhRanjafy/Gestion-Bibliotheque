@@ -4,6 +4,7 @@ import { CardProfilComponent } from "../../component/card-profil/card-profil.com
 import { HeaderComponent } from "../../component/header/header.component";
 import { LastReadingComponent } from "../../component/last-reading/last-reading.component";
 import { ListComponent } from "../../component/list/list.component";
+import { FamousAuthorComponent } from "../../component/famous-author/famous-author.component";
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ import { ListComponent } from "../../component/list/list.component";
     CardProfilComponent,
     HeaderComponent,
     LastReadingComponent,
-    ListComponent
+    ListComponent,
+    FamousAuthorComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
