@@ -1,7 +1,7 @@
 <main class="flex flex-col justify-center items-center overflow-hidden h-full">
-    <div class="flex flex-col justify-center w-fit gap-y-6"> 
-        <ul class="level1 level1-1 w-fit cursor-pointer relative">
-            <div (click)="toggleCollaction()" class="w-36 flex flex-row justify-start text-sm items-center">
+    <div class="flex flex-col justify-center w-fit gap-y-3"> 
+        <ul class="level1 level1-1 w-40 overflow-hidden cursor-pointer flex flex-col gap-0.5 items-center relative">
+            <div (click)="toggleCollaction()" class="w-40 px-4 py-2 rounded-xl cursor-pointer hover:bg-bluehover active:bg-blueactive flex flex-row justify-start text-sm items-center">
                 <svg class="" width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="21" height="24" fill="url(#pattern0_2005_18)"/>
                     <defs>
@@ -16,14 +16,19 @@
                     <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="showCollection? 'm19.5 8.25-7.5 7.5-7.5-7.5':'m8.25 4.5 7.5 7.5-7.5 7.5' " />
                 </svg>                  
             </div>
-            <li class="cursor-pointer text-xs left-6 top-0" [ngClass]="showCollection? 'relative block':'absolute hidden' ">Mystery</li>
-            <li class="cursor-pointer text-xs left-6 top-0" [ngClass]="showCollection? 'relative block':'absolute hidden' ">Fantastic</li>
-            <li class="cursor-pointer text-xs left-6 top-0" [ngClass]="showCollection? 'relative block':'absolute hidden' ">Romance</li>
-            <li class="cursor-pointer text-xs left-6 top-0" [ngClass]="showCollection? 'relative block':'absolute hidden' ">Love</li>
-            <li class="cursor-pointer text-xs left-6 top-0" [ngClass]="showCollection? 'relative block':'absolute hidden' ">Adventure</li>
+            <li class="cursor-pointer text-xs top-0 py-0.5 w-2/4 text-center rounded-md hover:bg-bluehover active:bg-blueactive" 
+                [ngClass]="showCollection? 'relative block':'absolute hidden' ">Mystery</li>    
+            <li class="cursor-pointer text-xs top-0 py-0.5 w-2/4 text-center rounded-md hover:bg-bluehover active:bg-blueactive" 
+                [ngClass]="showCollection? 'relative block':'absolute hidden' ">Fantastic</li>
+            <li class="cursor-pointer text-xs top-0 py-0.5 w-2/4 text-center rounded-md hover:bg-bluehover active:bg-blueactive" 
+                [ngClass]="showCollection? 'relative block':'absolute hidden' ">Romance</li>
+            <li class="cursor-pointer text-xs top-0 py-0.5 w-2/4 text-center rounded-md hover:bg-bluehover active:bg-blueactive" 
+                [ngClass]="showCollection? 'relative block':'absolute hidden' ">Love</li>
+            <li class="cursor-pointer text-xs top-0 py-0.5 w-2/4 text-center rounded-md hover:bg-bluehover active:bg-blueactive" 
+                [ngClass]="showCollection? 'relative block':'absolute hidden' ">Adventure</li>
         </ul>
         <ul class="level1 level1-2 w-fit cursor-pointer ">
-            <div class="w-36 flex flex-row justify-start text-sm items-center">
+            <div class="w-40 px-4 py-2 rounded-xl cursor-pointer hover:bg-bluehover active:bg-blueactive flex flex-row justify-start text-sm items-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="24" height="24" fill="url(#pattern0_2005_15)"/>
                     <defs>
@@ -37,7 +42,7 @@
             </div>
         </ul>
         <ul class="level1 level1-3 w-fit cursor-pointer ">
-            <div class="w-36 flex flex-row justify-start text-sm items-center">
+            <div class="w-40 px-4 py-2 rounded-xl cursor-pointer hover:bg-bluehover active:bg-blueactive flex flex-row justify-start text-sm items-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="24" height="24" fill="url(#pattern0_2006_24)"/>
                     <defs>

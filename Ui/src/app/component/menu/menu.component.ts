@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
 export class MenuComponent {
 
 
-  showCollection: boolean = false;
+  showCollection: boolean = true;
   iconShow: string = 'm8.25 4.5 7.5 7.5-7.5 7.5';
 
   toggleCollaction(){
