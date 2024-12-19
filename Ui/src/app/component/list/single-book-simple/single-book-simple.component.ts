@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component , Input } from '@angular/core';
+import { genre } from '../../../models/type.model';
 
 @Component({
   selector: 'app-single-book-simple',
@@ -9,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class SingleBookSimpleComponent {
 
+
+  @Input() book: {
+    title: string,
+    author: string,
+    genre: genre
+  } = {
+    title: 'Escarboucle Bleue',
+    author: 'Arthur',
+    genre: genre.Adventure
+  }
 }

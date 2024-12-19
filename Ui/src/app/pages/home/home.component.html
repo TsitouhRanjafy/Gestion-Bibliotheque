@@ -1,5 +1,5 @@
-<main class="flex flex-row py-4">
-    <div class="flex flex-col">
+<main class="flex flex-row py-4 overflow-hidden max-h-screen">
+    <div class="flex flex-col overflow-hidden">
         <div class=""><app-card-profil lastname="Sarah"/></div>
         <div class=""><app-menu></app-menu></div>
     </div>
@@ -7,10 +7,23 @@
         <section class="flex flex-col">
             <div class=""><app-header/></div>
             <div class=""><app-last-reading/></div>
-        </section>
+        </section>  
         <section class="flex flex-row overflow-hidden">
-            <div class=""><app-list/></div>
-            <div class="">author</div>
+            <div class="overflow-y-scroll flex flex-col" id="list">
+
+                <div class="h-full min-h-full">
+                    <app-list title="New Release"/>
+                </div>
+                
+                <div class="h-full min-h-full">
+                    <app-list title="Last borrow"/>
+                </div>
+
+                <div class="h-full min-h-full">
+                    <app-list title="All books"/>
+                </div>
+            </div>
+            <div class="" id="author">author</div>
         </section>
     </section>
 </main>

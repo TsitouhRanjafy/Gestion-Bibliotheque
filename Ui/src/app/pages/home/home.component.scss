@@ -32,10 +32,10 @@ main{
             &:nth-child(2){
                 div{
                     border: 1px aqua solid;
-                    &:nth-child(1){
+                    &#list{
                         flex: 4;
                     }
-                    &:nth-child(2){
+                    &#author{
                         flex: 1;
                     }
                 }

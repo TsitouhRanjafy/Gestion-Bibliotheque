@@ -15,14 +15,19 @@ module.exports = {
     },
     extend: {
       width: {
-        'book':'130px',
-        '20%':'20%'
+        'book':'110px',
+        '20%':'20%',
+        'screen':'100vw'
       },
       minWidth: {
-        '20%':'20%'
+        '20%':'16%'
       },
       height: {
-        'book':'93%'
+        'book':'180px',
+        'screen':'100vh'
+      },
+      maxHeight: {
+        'screen':'100vh'
       }
     },
   },
