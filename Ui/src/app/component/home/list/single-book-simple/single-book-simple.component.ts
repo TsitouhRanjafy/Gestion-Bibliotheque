@@ -1,5 +1,5 @@
 import { Component , Input } from '@angular/core';
-import { genre } from '../../../models/type.model';
+import { genre } from '../../../../models/type.model';
 
 @Component({
   selector: 'app-single-book-simple',

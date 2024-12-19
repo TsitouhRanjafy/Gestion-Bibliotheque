@@ -2,7 +2,7 @@ import { Component , Input} from '@angular/core';
 import { SearchBarComponent } from "./search-bar/search-bar.component";
 import { TextNotificationComponent } from './text-notification/text-notification.component';
 import { LogoComponent } from "./logo/logo.component";
-import { IEventEmitNotification } from '../../models/type.model';
+import { IEventEmitNotification } from '../../../models/type.model';
 import { NgClass } from '@angular/common';
 import { SingleNotificationComponent } from "./single-notification/single-notification.component";
 

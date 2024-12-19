@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SingleBookSimpleComponent } from "./single-book-simple/single-book-simple.component";
-import { genre } from '../../models/type.model';
+import { genre } from '../../../models/type.model';
 
 @Component({
   selector: 'app-list',
