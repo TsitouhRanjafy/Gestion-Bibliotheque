@@ -14,6 +14,16 @@ module.exports = {
       'thirty':'#747474'
     },
     extend: {
+      width: {
+        'book':'130px',
+        '20%':'20%'
+      },
+      minWidth: {
+        '20%':'20%'
+      },
+      height: {
+        'book':'93%'
+      }
     },
   },
   plugins: [],
