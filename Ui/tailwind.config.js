@@ -26,6 +26,7 @@ module.exports = {
       },
       height: {
         'book':'170px',
+        '90%':'90%',
         'screen':'100vh'
       },
       maxHeight: {
