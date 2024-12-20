@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <section class="w-1/4 flex flex-col  bg-blackprimary absolute mt-14 h-2/3 right-0 rounded-l-lg z-30" [ngClass]="showRelease? 'a':'toggleHidden' ">
+    <section class="w-1/4 flex flex-col  bg-blackprimary absolute mt-14 h-2/3 right-0 rounded-l-lg z-30 Hidden" [ngClass]="showRelease? 'toggleHidden':'a' ">
         <div class="w-full flex flex-row justify-between items-center p-5">
             <p class="select-none text-sm text-primary ">New Release</p>
             <div class="w-9 h-9 flex justify-center items-center hover:bg-secondary active:bg-thirty rounded-md" (click)="hiddenNotificationCard()" >
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <section class="w-1/4 flex flex-col bg-blackprimary absolute mt-14 h-2/3 right-0 rounded-lg z-30" [ngClass]="showFeatured? 'a':'toggleHidden'">
+    <section class="w-1/4 flex flex-col bg-blackprimary absolute mt-14 h-2/3 right-0 rounded-lg z-30 Hidden" [ngClass]="showFeatured? 'toggleHidden': 'a' ">
         <div class="w-full flex flex-row justify-between items-center p-5">
             <p class="select-none text-sm text-primary ">Featured</p>
             <div class="w-9 h-9 flex justify-center items-center hover:bg-secondary active:bg-thirty rounded-md" (click)="hiddenNotificationCard()" >
