@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-agree-check',
@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AgreeCheckComponent {
 
+  @Input() acccord: string = 'I agree'
 }

@@ -9,6 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class AlreadyComponent {
 
-  @Input() question: string = 'Already have account?'
-  @Input() solution: string = 'Log in'
+  @Input({required:true}) question: string = '';
+  @Input({required: true}) solution: string = ''
 }
