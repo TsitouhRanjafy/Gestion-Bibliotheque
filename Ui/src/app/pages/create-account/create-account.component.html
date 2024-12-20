@@ -7,16 +7,25 @@
         </div>
     </section>
 
-    <section class="" id="form">
-        <p>Create Account</p>
-        <div class="border-2 p-1" id="name"></div>
-        <div class="border-2 p-1" id="email"></div>
-        <div class="border-2 p-1" id="password"></div>
-        <div class="border-2 p-1" id="accord"></div>
-        <div class="border-2 p-1" id="submit"></div>
-        <div class="border-2 p-1" id="or"></div>
-        <div class="border-2 p-1" id="google"></div>
-        <div class="border-2 p-1" id="login"></div>
+    <section class="flex flex-row justify-center" id="form">
+        <div class="w-4/5 border-2 border-redpropre">
+            <p>Create Account</p>
+
+        <div class="border-2 p-1 flex flex-row gap-2" id="name">
+            <div class="borer-2 border-bluepropre" id="firstname"><app-input name="Firstname"/></div>
+            <div class="borer-2 border-bluepropre" id="lastname"><app-input name="Lastname"/></div>
+        </div>
+
+        <div class="border-2 p-1" id="email"><app-input/></div>
+        <div class="border-2 p-1" id="password"><app-input name="password"/></div>
+        <div class="border-2 p-1" id="accord"><app-agree-check/></div>
+        <div class="border-2 p-1" id="submit"><app-button title="Create Account"/></div>
+        <div class="border-2 p-1" id="google"><app-or/></div>
+        <div class="border-2 p-1" id="or"><app-button textcolor="text-primary" background="bg-whitepropre" title="Sign up With Google" iconPath="assets/icons8-logo-google-48.png"/></div>
+        <div class="border-2 p-1" id="login">
+            <app-already/>
+        </div>
+        </div>
     </section>
 
 </main>

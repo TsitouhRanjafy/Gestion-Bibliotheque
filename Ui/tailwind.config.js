@@ -12,7 +12,8 @@ module.exports = {
       'primary':'#242424',
       'secondary':'#848484',
       'thirty':'#747474',
-      'bgprimary':'#e1e1e1'
+      'bgprimary':'#e1e1e1',
+      'blue':'#477BFF'
     },
     extend: {
       width: {
