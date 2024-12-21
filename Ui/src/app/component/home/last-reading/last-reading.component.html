@@ -1,28 +1,49 @@
-<main class="flex flex-col h-full">
-    <p class="font-bold text-lg">Books you loan last</p>
-    <div class=" border-redpropre h-full py-6 flex flex-row gap-3 overflow-x-scroll relative">
-        <div class="min-w-96 w-1/3 h-full ">
-            <app-single-book-details/>  
-        </div>
-
-        <div class="min-w-96 w-1/3 h-full ">
-            <app-single-book-details/>  
-        </div>
-
-        <div class="min-w-96 w-1/3 h-full ">
-            <app-single-book-details/>  
-        </div>
-        
-        <div class="min-w-96 w-1/3 h-full ">
-            <app-single-book-details/>  
-        </div>
-
-        <div class="min-w-96 w-1/3 h-full ">
-            <app-single-book-details/>  
-        </div>
-
-        <div class="min-w-96 w-1/3 h-full ">
-            <app-single-book-details/>  
+<main class="flex flex-col h-full gap-y-3">
+    <div class="flex flex-row justify-between">
+        <p class="font-bold text-lg">Books you loan last</p>
+        <div class="flex flex-row">
+            <button class="">
+                prev
+            </button>
+            <button class="">
+                next
+            </button>
         </div>
     </div>
+
+    <swiper-container 
+        class="swiper h-52"
+        [slidesPerView]="3"
+        [navigation]="true"
+        [spaceBetween]="50"
+        [pagination]="true"
+    >
+
+        <swiper-slide class="min-w-96 w-96 h-full ">
+            <app-single-book-details/>  
+        </swiper-slide>
+
+        <swiper-slide class="min-w-96 w-96 h-full ">
+            <app-single-book-details/>  
+        </swiper-slide>
+
+        <swiper-slide class="min-w-96 w-96 h-full ">
+            <app-single-book-details/>  
+        </swiper-slide>
+        
+        <swiper-slide class="min-w-96 w-96 h-full ">
+            <app-single-book-details/>  
+        </swiper-slide>
+
+        <swiper-slide class="min-w-96 w-96 h-full ">
+            <app-single-book-details/>  
+        </swiper-slide>
+
+        <swiper-slide class="min-w-96 w-96 h-full ">
+            <app-single-book-details/>  
+        </swiper-slide>
+        
+
+    </swiper-container>
+
 </main>
