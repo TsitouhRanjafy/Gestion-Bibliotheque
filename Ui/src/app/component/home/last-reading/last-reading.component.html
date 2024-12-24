@@ -1,14 +1,6 @@
 <main class="flex flex-col h-full gap-y-3">
     <div class="flex flex-row justify-between">
         <p class="font-bold text-lg">Books you loan last</p>
-        <div class="flex flex-row">
-            <button class="">
-                prev
-            </button>
-            <button class="">
-                next
-            </button>
-        </div>
     </div>
 
     <swiper-container 
@@ -18,32 +10,9 @@
         [spaceBetween]="50"
         [pagination]="true"
     >
-
-        <swiper-slide class="min-w-96 w-96 h-full ">
-            <app-single-book-details/>  
+        <swiper-slide class="min-w-96 w-96 h-full " *ngFor="let lastReadingBook of lastReadingBooks">
+            <app-single-book-details [title]="lastReadingBook.title" [genre]="lastReadingBook.genre" [dateRetoure]="lastReadingBook.dateRetour"/>  
         </swiper-slide>
-
-        <swiper-slide class="min-w-96 w-96 h-full ">
-            <app-single-book-details/>  
-        </swiper-slide>
-
-        <swiper-slide class="min-w-96 w-96 h-full ">
-            <app-single-book-details/>  
-        </swiper-slide>
-        
-        <swiper-slide class="min-w-96 w-96 h-full ">
-            <app-single-book-details/>  
-        </swiper-slide>
-
-        <swiper-slide class="min-w-96 w-96 h-full ">
-            <app-single-book-details/>  
-        </swiper-slide>
-
-        <swiper-slide class="min-w-96 w-96 h-full ">
-            <app-single-book-details/>  
-        </swiper-slide>
-        
 
     </swiper-container>
-
 </main>

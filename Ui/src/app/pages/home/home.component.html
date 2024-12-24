@@ -6,21 +6,21 @@
     <section class="flex flex-col overflow-hidden">
         <section class="flex flex-col">
             <div class=""><app-header/></div>
-            <div class=""><app-last-reading/></div>
+            <div class=""><app-last-reading [lastReadingBooks]="lastReadingBooks"/></div>
         </section>  
         <section class="flex flex-row overflow-hidden">
             <div class="overflow-y-scroll flex flex-col" id="list">
 
                 <div class="h-full min-h-full">
-                    <app-list title="New Release"/>
+                    <app-list title="New Release" [books]="newReleaseBooks"/>
                 </div>
                 
                 <div class="h-full min-h-full">
-                    <app-list title="Last borrow"/>
+                    <app-list title="Last borrow" [books]="newReleaseBooks" />
                 </div>
 
                 <div class="h-full min-h-full">
-                    <app-list title="All books"/>
+                    <app-list title="All books" [books]="newReleaseBooks" />
                 </div>
             </div>
             <div class="relative" id="author"><app-famous-author/></div>

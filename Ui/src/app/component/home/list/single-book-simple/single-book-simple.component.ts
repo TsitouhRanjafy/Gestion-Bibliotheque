@@ -1,5 +1,5 @@
 import { Component , Input } from '@angular/core';
-import { genre } from '../../../../models/type.model';
+import { disponible, genre, IBook } from '../../../../models/type.model';
 
 @Component({
   selector: 'app-single-book-simple',
@@ -11,13 +11,11 @@ import { genre } from '../../../../models/type.model';
 export class SingleBookSimpleComponent {
 
 
-  @Input() book: {
-    title: string,
-    author: string,
-    genre: genre
-  } = {
+  @Input() book: IBook = {
     title: 'Escarboucle Bleue',
     author: 'Arthur',
-    genre: genre.Adventure
+    genre: genre.Adventure,
+    sortie: new Date(2024,1,1),
+    disponible: disponible.OUI
   }
 }

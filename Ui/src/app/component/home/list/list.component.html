@@ -1,49 +1,11 @@
 <main class="flex flex-col w-full h-full overflow-hidden">
     <p class=" font-bold text-lg items-center mt-1">{{ title }}</p>
     <div class="flex flex-row w-full h-full overflow-x-auto items-center">
-        <div class="w-fit min-w-fit " [(title)]="book.title">
-            <app-single-book-simple/>
+
+        <div class="w-fit min-w-fit" *ngFor="let book of books">
+            <app-single-book-simple [book]="book"/>
         </div>
 
-        <div class="w-fit min-w-fit " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit  " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit  " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit  " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
-
-        <div class="w-fit min-w-fit  " [(title)]="book.title">
-            <app-single-book-simple/>
-        </div>
     </div>
     
 </main>
