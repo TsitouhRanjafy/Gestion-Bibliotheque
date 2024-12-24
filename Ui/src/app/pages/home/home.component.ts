@@ -1,5 +1,5 @@
 import { lastReadingBooksData } from '../../db/lastreading.db';
-import { Component } from '@angular/core';
+import { Component , CUSTOM_ELEMENTS_SCHEMA, ViewChild } from '@angular/core';
 import { MenuComponent } from '../../component/home/menu/menu.component';
 import { CardProfilComponent } from "../../component/home/card-profil/card-profil.component";
 import { HeaderComponent } from "../../component/home/header/header.component";
@@ -21,11 +21,14 @@ import { newReleaseBookDb } from '../../db/newreleasebook.db';
     FamousAuthorComponent
 ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomeComponent {
 
+  @ViewChild('sectionList') sectionList?: Element;
 
   lastReadingBooks: IBookSingle[] = lastReadingBooksData
   newReleaseBooks: IBook[] = newReleaseBookDb
+
 }

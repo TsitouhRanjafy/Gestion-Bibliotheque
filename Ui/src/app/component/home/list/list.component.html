@@ -1,11 +1,22 @@
 <main class="flex flex-col w-full h-full overflow-hidden">
-    <p class=" font-bold text-lg items-center mt-1">{{ title }}</p>
-    <div class="flex flex-row w-full h-full overflow-x-auto items-center">
-
-        <div class="w-fit min-w-fit" *ngFor="let book of books">
-            <app-single-book-simple [book]="book"/>
-        </div>
-
+    <div class="flex flex-row justify-between">
+        <p class=" font-bold text-lg items-center mt-1">{{ title }}</p>
+        <p class="text-sm items-center mt-1 text-blue cursor-pointer select-none mr-1" (click)="toggleEnableNavigate()">{{ moreORhide }}</p>
     </div>
+    
+    <swiper-container 
+        class="flex flex-row w-full h-full overflow-x-auto items-center"
+        [slidesPerView]="7"
+        [navigation]="isEnableListNavigate"
+        [pagination]="isEnableListNavigate"
+    >
+        <swiper-slide 
+            class="w-fit min-w-fit items-center flex flex-col justify-center" 
+            *ngFor="let book of books"
+        >
+            <app-single-book-simple [book]="book"/>
+        </swiper-slide>    
+
+    </swiper-container>
     
 </main>

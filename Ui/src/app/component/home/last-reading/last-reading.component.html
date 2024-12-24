@@ -1,14 +1,16 @@
 <main class="flex flex-col h-full gap-y-3">
     <div class="flex flex-row justify-between">
         <p class="font-bold text-lg">Books you loan last</p>
+        <p class="text-sm text-blue mr-3 cursor-pointer" (click)="toggleHidden()">{{ moreORhide }}</p>
     </div>
 
     <swiper-container 
         class="swiper h-52"
         [slidesPerView]="3"
-        [navigation]="true"
+        [navigation]="isEnableToNavigate"
         [spaceBetween]="50"
-        [pagination]="true"
+        [pagination]="isEnableToNavigate"
+
     >
         <swiper-slide class="min-w-96 w-96 h-full " *ngFor="let lastReadingBook of lastReadingBooks">
             <app-single-book-details [title]="lastReadingBook.title" [genre]="lastReadingBook.genre" [dateRetoure]="lastReadingBook.dateRetour"/>  

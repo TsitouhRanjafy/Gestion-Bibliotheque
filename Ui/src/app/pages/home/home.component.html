@@ -8,9 +8,9 @@
             <div class=""><app-header/></div>
             <div class=""><app-last-reading [lastReadingBooks]="lastReadingBooks"/></div>
         </section>  
-        <section class="flex flex-row overflow-hidden">
+        <section #sectionList class="flex flex-row overflow-hidden">
+            
             <div class="overflow-y-scroll flex flex-col" id="list">
-
                 <div class="h-full min-h-full">
                     <app-list title="New Release" [books]="newReleaseBooks"/>
                 </div>
@@ -19,10 +19,11 @@
                     <app-list title="Last borrow" [books]="newReleaseBooks" />
                 </div>
 
-                <div class="h-full min-h-full">
+                <div class="h-full min-h-full" id="saved">
                     <app-list title="All books" [books]="newReleaseBooks" />
                 </div>
             </div>
+
             <div class="relative" id="author"><app-famous-author/></div>
         </section>
     </section>

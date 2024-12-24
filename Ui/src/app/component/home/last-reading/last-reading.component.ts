@@ -2,6 +2,7 @@ import { Component , CUSTOM_ELEMENTS_SCHEMA, Input} from '@angular/core';
 import { SingleBookDetailsComponent } from "./single-book-details/single-book-details.component";
 import { genre, IBookSingle } from '../../../models/type.model';
 import { CommonModule } from '@angular/common';
+import { unescape } from 'querystring';
 
 
 @Component({
@@ -17,6 +18,9 @@ import { CommonModule } from '@angular/common';
 })
 export class LastReadingComponent {
   
+  moreORhide: string = 'more';
+  isEnableToNavigate: boolean = false;
+
   @Input() lastReadingBooks: IBookSingle[] = [
     {
       title: 'Title Harry potter book',
@@ -24,5 +28,10 @@ export class LastReadingComponent {
       dateRetour: new Date 
     }
   ]
+
+  toggleHidden(): void {
+    this.isEnableToNavigate = !this.isEnableToNavigate
+    this.moreORhide = this.isEnableToNavigate? 'hide' : 'more'
+  }
 
 }
