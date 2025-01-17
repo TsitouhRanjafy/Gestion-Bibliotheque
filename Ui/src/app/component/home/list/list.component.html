@@ -1,22 +1,25 @@
 <main class="flex flex-col w-full h-full overflow-hidden">
-    <div class="flex flex-row justify-between">
-        <p class=" font-bold text-lg items-center mt-1">{{ title }}</p>
-        <p class="text-sm items-center mt-1 text-blue cursor-pointer select-none mr-1" (click)="toggleEnableNavigate()">{{ moreORhide }}</p>
+    <div class="flex justify-between">
+        <p class=" font-bold text-lg items-center mt-1">{{ title }}</p> 
+        <div class="pr-2 flex flex-row  ">
+            <mat-paginator #paginator
+               class="demo-paginator"
+               (page)="handlePageEvent($event)"
+               [length]="length"
+               [pageSize]="pageSize"
+               [disabled]="disabled"
+               [hidePageSize]="true"
+               [pageIndex]="pageIndex"
+            >
+            </mat-paginator>
+
+        </div>  
     </div>
     
-    <swiper-container 
-        class="flex flex-row w-full h-full overflow-x-auto items-center"
-        [slidesPerView]="7"
-        [navigation]="isEnableListNavigate"
-        [pagination]="isEnableListNavigate"
-    >
-        <swiper-slide 
-            class="w-fit min-w-fit items-center flex flex-col justify-center" 
-            *ngFor="let book of books"
-        >
+    <div class="flex flex-row justify-center w-full h-full items-center">
+        <div class="w-fit min-w-fit items-center flex flex-col justify-center" *ngFor="let book of books" >
             <app-single-book-simple [book]="book"/>
-        </swiper-slide>    
-
-    </swiper-container>
+        </div>    
+    </div>
     
 </main>

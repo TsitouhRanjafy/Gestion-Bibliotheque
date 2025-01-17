@@ -14,15 +14,30 @@
             
             <div class="overflow-y-scroll flex flex-col" id="list">
                 <div class="h-full min-h-full">
-                    <app-list title="New Release" [books]="newReleaseBooks"/>
+                    <app-list 
+                        title="New Release"  
+                        (pageIndexChange)="changePagination($event)" 
+                        [books]="newReleaseBooks"
+                        [length]="lengthNewRelease"
+                    />
                 </div>
                 
                 <div class="h-full min-h-full">
-                    <app-list title="Last borrow" [books]="newReleaseBooks" />
+                    <app-list 
+                        title="Last borrow" 
+                        (pageIndexChange)="changePaginationLS($event)"
+                        [books]="lastBorrowBooks" 
+                        [length]="lengthLastBorrow"
+                    />
                 </div>
 
                 <div class="h-full min-h-full" id="saved">
-                    <app-list title="All books" [books]="newReleaseBooks" />
+                    <app-list 
+                        title="All books" 
+                        (pageIndexChange)="changePaginationAll($event)"
+                        [books]="AllBooks" 
+                        [length]="lengthAllBooks"
+                    />
                 </div>
             </div>
 

@@ -72,3 +72,12 @@ export const newReleaseBookDb: IBook[] = [
         disponible: disponible.OUI
     },
 ]
+
+export const get = (pageIndex: number): IBook[] =>{
+    let newBook : IBook[] = []
+
+    for (let i=pageIndex*7; (i< (pageIndex+1)*7) && (i<newReleaseBookDb.length);i++){
+        newBook.push(newReleaseBookDb[i])
+    }
+    return newBook;
+}

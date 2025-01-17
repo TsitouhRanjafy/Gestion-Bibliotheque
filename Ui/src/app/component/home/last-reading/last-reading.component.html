@@ -8,10 +8,10 @@
     <swiper-container 
         class="swiper h-full"
         [slidesPerView]="3"
-        [spaceBetween]="50"
+        [spaceBetween]="40"
         [pagination]="false"
 
-    >
+    >       
         <swiper-slide class="w-1/2 h-full " *ngFor="let lastReadingBook of lastReadingBooks">
             <app-single-book-details [title]="lastReadingBook.title" [genre]="lastReadingBook.genre" [dateRetoure]="lastReadingBook.dateRetour"/>  
         </swiper-slide>
