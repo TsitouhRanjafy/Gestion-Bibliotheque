@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       width: {
-        'book':'100px',
+        'book':'90px',
         '20%':'20%',
         'screen':'100vw',
         '90%':'90%'
@@ -26,7 +26,7 @@ module.exports = {
         '20%':'16%'
       },
       height: {
-        'book':'170px',
+        'book':'150px',
         '90%':'90%',
         'screen':'100vh'
       },

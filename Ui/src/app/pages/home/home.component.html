@@ -4,10 +4,12 @@
         <div class=""><app-menu></app-menu></div>
     </div>
     <section class="flex flex-col overflow-hidden">
-        <section class="flex flex-col">
+
+        <section class="flex flex-col overflow-hidden">
             <div class=""><app-header/></div>
             <div class=""><app-last-reading [lastReadingBooks]="lastReadingBooks"/></div>
         </section>  
+
         <section #sectionList class="flex flex-row overflow-hidden">
             
             <div class="overflow-y-scroll flex flex-col" id="list">
@@ -26,5 +28,6 @@
 
             <div class="relative" id="author"><app-famous-author/></div>
         </section>
+
     </section>
 </main>

@@ -29,9 +29,9 @@ export class LastReadingComponent {
     }
   ]
 
-  toggleHidden(): void {
-    this.isEnableToNavigate = !this.isEnableToNavigate
-    this.moreORhide = this.isEnableToNavigate? 'hide' : 'more'
-  }
+  // toggleHidden(): void {
+  //   this.isEnableToNavigate = !this.isEnableToNavigate
+  //   this.moreORhide = this.isEnableToNavigate? 'hide' : 'more'
+  // }
 
 }
