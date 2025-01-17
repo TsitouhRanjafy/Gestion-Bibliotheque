@@ -5,9 +5,9 @@ import { CardProfilComponent } from "../../component/home/card-profil/card-profi
 import { HeaderComponent } from "../../component/home/header/header.component";
 import { LastReadingComponent } from "../../component/home/last-reading/last-reading.component";
 import { ListComponent } from "../../component/home/list/list.component";
-import { FamousAuthorComponent } from "../../component/home/famous-author/famous-author.component";
-import { IBook, IBookSingle } from '../../models/type.model';
-import { get, newReleaseBookDb } from '../../db/newreleasebook.db';
+import { IBook, IBookSingle, IBookTop } from '../../models/type.model';
+import { get, newReleaseBookDb, top } from '../../db/newreleasebook.db';
+import { TopComponent } from '../../component/home/top/top.component';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +18,7 @@ import { get, newReleaseBookDb } from '../../db/newreleasebook.db';
     HeaderComponent,
     LastReadingComponent,
     ListComponent,
-    FamousAuthorComponent
+    TopComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -36,6 +36,8 @@ export class HomeComponent {
 
   AllBooks: IBook[] = get(0)
   lengthAllBooks: number = newReleaseBookDb.length
+
+  topBook: IBookTop[] = top()
   
 
   changePagination(pageIndex: number): void {

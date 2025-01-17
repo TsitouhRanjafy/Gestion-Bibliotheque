@@ -23,6 +23,14 @@ export interface IBook {
     sortie: Date | undefined,
     disponible: disponible,
 }
+export interface IBookTop {
+    title: string,
+    author: string,
+    genre: genre,
+    sortie: Date | undefined,
+    disponible: disponible,
+    nombre_emprunt: number;
+}
 
 export enum disponible {
     OUI = "oui",
