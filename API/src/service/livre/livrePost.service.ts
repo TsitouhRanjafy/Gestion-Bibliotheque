@@ -17,7 +17,8 @@ export class LivreServicePost {
                 titre: newDataWithoutId.titre,
                 auteur: newDataWithoutId.auteur,
                 sortie: newDataWithoutId.sortie,
-                disponible: newDataWithoutId.disponible
+                disponible: newDataWithoutId.disponible,
+                genre: newDataWithoutId.genre
             }
             if (!newData.titre) return 0;
             const data = await this.livreDAPost.NewLivre(newData)

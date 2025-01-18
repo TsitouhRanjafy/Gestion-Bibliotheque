@@ -28,7 +28,7 @@ export class Emprunt extends Model<EmpruntAttributes,EmpruntCreationOptional> im
 Emprunt.init(
     {
         id_emprunt: {
-            type: DataTypes.UUIDV4,
+            type: DataTypes.STRING,
             allowNull: false,
             primaryKey: true,
         },

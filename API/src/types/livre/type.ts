@@ -2,7 +2,8 @@ export interface ILivre {
     titre: string,
     auteur: string,
     sortie: Date,
-    disponible: string
+    disponible: string,
+    genre: string,
 }
 
 export enum triMethodeLivre {

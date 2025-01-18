@@ -43,7 +43,7 @@ export class LivreDAGet extends DBManager {
             const data = await this.ReadData(deferredQuery);
             return data;
         } catch (error) {
-            console.error(" Error DA Livre Get ",error);
+            throw error
         }
     }
 
@@ -55,7 +55,7 @@ export class LivreDAGet extends DBManager {
             const data = await this.ReadData(deferredQuery);
             return data;
         } catch (error) {
-            console.error(" Error DA Livre Get ",error);
+            throw error
         }
     }
 
@@ -80,7 +80,7 @@ export class LivreDAGet extends DBManager {
             const data = await this.ReadData(deferredQuery);
             return data;
         } catch (error) {
-            console.error(" Error DA Livre Get ",error);
+            throw error
         }
     }
 
@@ -96,7 +96,7 @@ export class LivreDAGet extends DBManager {
             const nombreToutLivre = await this.ReadData(deferredQuery);
             return nombreToutLivre;
         } catch (error) {
-            console.error(" Error DA Livre Get ",error);
+            throw error
         }
     }
 }

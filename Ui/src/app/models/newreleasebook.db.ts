@@ -1,4 +1,4 @@
-import { disponible, genre, IBook, IBookTop } from "../models/type.model";
+import { disponible, genre, IBook, IBookTop } from "./type.model";
 
 export const newReleaseBookDb: IBook[] = [
     {
